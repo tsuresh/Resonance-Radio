@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="fm.stcml.com.thomianfm.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:gravity="center"
+    android:background="@drawable/bg">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/player"
+        android:layout_alignParentBottom="true"/>
+
+
+    <TextView
+        android:id="@+id/txtClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="If you encounter any issues while listening to live feed please click here."
+        android:textColor="#fff"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/tint"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="RESONANCE RADIO"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"
+            android:textStyle="normal|bold"
+            android:textSize="24sp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnrequest"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"
+            android:text="Request a Song"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
